@@ -4,10 +4,10 @@
     --color-text-light: #ffff;
     --color-primary: #80B287;
     --color-secondary: #917E3B;
-    --color-dark: #4d7f54;
+    --color-dark: #4d7f54; 
     --color-bg: #ffff;
     --color-card-bg:#565454dc;
-    --color-btn-text:#551a8b;
+    --color-btn-text:#ffff;
 
     /* font-size */
     --font-size-title: 24px;

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
         <div className={styles.content}>
-            © 2025 | Designed and code by Rocio Arenillas
+            © 2026 | Designed and code by Rocio Arenillas
         </div>
     </footer>
   )

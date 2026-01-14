@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
+
+//CAMBIAR LOS LINKS DE LAS PÁGINAS
 export default function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,8 +15,8 @@ export default function Navbar() {
       <div className={styles.menu}>
         <img className={styles.menuBtn} 
         src={menuOpen 
-            ? "/assets/closeIcon.png"
-            : "/assets/menuIcon.png"
+            ? "/assets/Navbar/closeIcon.png"
+            : "/assets/Navbar/menuIcon.png"
         } 
         alt="menu-button"
         onClick={() => setMenuOpen(!menuOpen)} />
