@@ -1,0 +1,123 @@
+@import "../../styles/vars.css";
+@import "../../styles/globals.css";
+
+.navbarBg {
+    background-color: var(--color-dark);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    margin: 0 10%;
+}
+
+.title {
+    font-size: var(--font-size-title);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.title:hover {
+    color: var(--color-text-dark);
+}
+
+.menuBtn {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.menuItems a:hover {
+    color: var(--color-text-dark);
+}
+
+.menu {
+    font-size: var(--font-size-text);
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title {
+        font-size: var(--font-size-small-title);
+    }
+
+    .menu {
+        font-size: var(--font-size-small-text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItems {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: linear-gradient(0deg,
+                rgba(201, 201, 202, 0.747) 0%,
+                var(--color-dark) 100%);
+        padding: 20px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuItems a {
+        text-decoration: none;
+        color: var(--color-text-light);
+    }
+
+    .menuItems:hover {
+        color: var(--color-text-dark);
+    }
+
+    .menuOpen {
+        display: flex;
+    }
+
+    @media (max-width: 700px) {}
+}

@@ -1,0 +1,18 @@
+:root{
+    /* colors */
+    --color-text-dark:#4B5563;
+    --color-text-light: #ffff;
+    --color-primary: #80B287;
+    --color-secondary: #917E3B;
+    --color-dark: #4d7f54;
+    --color-bg: #ffff;
+    --color-card-bg:#565454dc;
+    --color-btn-text:#551a8b;
+
+    /* font-size */
+    --font-size-title: 24px;
+    --font-size-text: 16px;
+    --font-size-small-title: 20px;
+    --font-size-small-text: 14px;
+}
+
