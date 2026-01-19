@@ -39,41 +39,85 @@ body {
   text-transform: capitalize;
 }
 
-/* .text {
-  font-size: var(--font-size-text);
-  color: var(--color-text-dark);
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: var(--color-card-bg);
-    color: var(--color-text-light);
-    padding: 20px;
-    border-radius: 5px;
-}
-.cardList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px 0px;
-}
-
+/*
 
 .successMessage{
   font-size: var(--font-size-text);
   color: var(--color-text-light);
   font-weight: bold;
 }
-.btnSection{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-} */
+ */
 
+
+ /* CARDS */
+
+.experiencesList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-primary);
+    gap: 15px;
+    padding: 50px;
+}
+.cardLink{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.experienceCard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+}
+.experienceCard:hover {
+  transform: scale(1.06);
+}
+.experienceDetailsTop{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.experienceImage{
+    height: 140px;
+    width: calc(100% + 30px);
+    object-fit: cover;
+    display: block;
+    margin: -15px -15px 10px -15px;
+    border-radius: 5px 5px 0 0;
+}
+.experienceCategorie{
+    width: fit-content;
+    font-size: var(--font-size-small-text);
+    background-color: var(--color-secondary);
+    padding: 6px;
+    border-radius: 4px;
+    color: var(--color-text-light);
+}
+.experienceDuration{
+    font-size: var(--font-size-small-text);
+}
+.experienceDetailsBottom{
+    display: flex;
+    justify-content: space-between;
+}
+.experiencePrice{
+    margin: 0;
+    background-color: var(--color-dark);
+    padding: 6px;
+    border-radius: 4px;
+    color: var(--color-text-light);
+}
+.experienceRating{
+    margin: 0;
+}
+
+/* BUTTONS */
 .btn {
   width: fit-content;
   padding: 14px;
