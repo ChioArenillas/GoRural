@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbarBg}>
     <div className={styles.navbar}>
-      <a className={styles.title} href="/">GoRural
+      <a className={styles.title} href="/HomePage">GoRural
       </a>
       <div className={styles.menu}>
         <img className={styles.menuBtn} 
@@ -22,10 +22,10 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)} />
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}>
-            <li> <a href={'../../CreatePage'}>Categories</a></li>
-            <li> <a href={'../../ListPage'}>Destinations</a></li>
+            <li> <a href={'../../CategoriesPage'}>Categories</a></li>
+            <li> <a href={'../../DestinationsPage'}>Destinations</a></li>
             <li> <a href={'../../FavouritesPage'}>Favourites</a></li>
-            <li> <a href={'../../FavouritesPage'}>FAQs</a></li>
+            <li> <a href={'../../FAQsPage'}>FAQs</a></li>
             <li> <a href={'../../ContactPage'}>Contact</a></li>
         </ul>
       </div>
