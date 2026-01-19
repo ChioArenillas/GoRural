@@ -5,7 +5,9 @@ export default function HomePage() {
     return (
         <div>
             <Hero />
-{/*             <Categories />
+{/*             
+            <Buscador />
+            <Categories />
             <MostPopular />
             <ForFamilies />
             <Destinations /> */}

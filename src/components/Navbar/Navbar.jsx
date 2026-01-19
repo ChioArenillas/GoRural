@@ -22,8 +22,8 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)} />
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}>
-            <li> <a href={'../../CategoriesPage'}>Categories</a></li>
-            <li> <a href={'../../DestinationsPage'}>Destinations</a></li>
+            <li> <a href={'../../ExperiencesPage'}>Experiences</a></li>
+            <li> <a href={'../../LocationsPage'}>Locations</a></li>
             <li> <a href={'../../FavouritesPage'}>Favourites</a></li>
             <li> <a href={'../../FAQsPage'}>FAQs</a></li>
             <li> <a href={'../../ContactPage'}>Contact</a></li>
