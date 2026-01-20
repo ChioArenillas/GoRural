@@ -30,16 +30,18 @@ export default function Experiences() {
               id: experience.id
             }
             }}>
-            <div className={styles.experienceDetailsTop}>
-              <img src={experience.img} alt={experience.title} className={styles.experienceImage}/>
-              <p className={styles.experienceCategorie}>{experience.category}</p>
-              <h3 className={styles.experienceTitle}>{experience.title}</h3>
-              <p className={styles.experienceDuration}>{experience.duration}</p>
-            </div>
-            <div className={styles.experienceDetailsBottom}>
-              <p className={styles.experiencePrice}>{experience.price}{experience.currency}</p>
-              <p className={styles.experienceRating}> ⭐ {experience.rating} ({experience.reviews})</p>
-            </div>
+              <div className={styles.experienceCardDetails}>
+                <div className={styles.experienceDetailsTop}>
+                  <img src={experience.img} alt={experience.title} className={styles.experienceImage}/>
+                  <p className={styles.experienceCategorie}>{experience.category}</p>
+                  <h3 className={styles.experienceTitle}>{experience.title}</h3>
+                  <p className={styles.experienceDuration}>{experience.duration}</p>
+                </div>
+                <div className={styles.experienceDetailsBottom}>
+                  <p className={styles.experiencePrice}>{experience.price}{experience.currency}</p>
+                  <p className={styles.experienceRating}> ⭐ {experience.rating} ({experience.reviews})</p>
+                </div>
+              </div>
           </Link>
         </div>
       </div>

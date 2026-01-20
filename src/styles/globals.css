@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -13,23 +14,6 @@ body {
   padding-bottom: 50px;
   margin: 40px 0 40px 0;
 }
-/* .component {
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-.componentContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-} */
-
-
 
 .title {
   font-size: var(--font-size-title);
@@ -39,81 +23,93 @@ body {
   text-transform: capitalize;
 }
 
-/*
+/* CARDS */
 
-.successMessage{
-  font-size: var(--font-size-text);
-  color: var(--color-text-light);
-  font-weight: bold;
+.experiencesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--color-primary);
+  gap: 15px;
+  padding: 50px;
 }
- */
 
-
- /* CARDS */
-
-.experiencesList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--color-primary);
-    gap: 15px;
-    padding: 50px;
-}
-.cardLink{
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-.experienceCard{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg);
-    padding: 15px;
-    border-radius: 5px;
-    width: 200px;
-    height: 300px;
+
+.experienceCard {
+  background-color: var(--color-bg);
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;
+  height: 300px;
 }
+
 .experienceCard:hover {
   transform: scale(1.06);
 }
-.experienceDetailsTop{
+
+.experienceCardDetails {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.experienceImage{
-    height: 140px;
-    width: calc(100% + 30px);
-    object-fit: cover;
-    display: block;
-    margin: -15px -15px 10px -15px;
-    border-radius: 5px 5px 0 0;
+.experienceDetailsTop {
+  display: flex;
+  flex-direction: column;
 }
-.experienceCategorie{
-    width: fit-content;
-    font-size: var(--font-size-small-text);
-    background-color: var(--color-secondary);
-    padding: 6px;
-    border-radius: 4px;
-    color: var(--color-text-light);
+
+.experienceImage {
+  height: 140px;
+  width: calc(100% + 30px);
+  object-fit: cover;
+  display: block;
+  margin: -15px -15px 5px -15px;
+  border-radius: 5px 5px 0 0;
 }
-.experienceDuration{
-    font-size: var(--font-size-small-text);
+
+.experienceCategorie {
+  width: fit-content;
+  font-size: var(--font-size-small-text);
+  background-color: var(--color-secondary);
+  padding: 6px;
+  margin: 5px;
+  border-radius: 4px;
+  color: var(--color-text-light);
 }
-.experienceDetailsBottom{
-    display: flex;
-    justify-content: space-between;
+
+.experienceTitle {
+  margin: 5px;
 }
-.experiencePrice{
-    margin: 0;
-    background-color: var(--color-dark);
-    padding: 6px;
-    border-radius: 4px;
-    color: var(--color-text-light);
+
+.experienceDuration {
+  font-size: var(--font-size-small-text);
+  margin: 5px;
 }
-.experienceRating{
-    margin: 0;
+
+.experienceDetailsBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiencePrice {
+  margin: 0;
+  background-color: var(--color-dark);
+  padding: 6px;
+  border-radius: 4px;
+  color: var(--color-text-light);
+}
+
+.experienceRating {
+  margin: 0;
 }
 
 /* BUTTONS */
@@ -122,8 +118,8 @@ body {
   padding: 14px;
   font-size: var(--font-size-text);
   font-weight: bold;
-  background: 
-  linear-gradient(rgb(77, 127, 84), 
+  background:
+    linear-gradient(rgb(77, 127, 84),
       rgb(255, 255, 255));
   color: var(--color-btn-text);
   border-radius: 8px;
@@ -132,6 +128,7 @@ body {
   text-decoration: none;
   transition: transform 200ms ease-in-out;
 }
+
 .smallBtn {
   width: fit-content;
   padding: 8px;
@@ -145,7 +142,10 @@ body {
   text-decoration: none;
   transition: transform 200ms ease-in-out;
 }
-.btn:hover, .smallBtn:hover, .btnCard:hover {
+
+.btn:hover,
+.smallBtn:hover,
+.btnCard:hover {
   background: var(--color-dark);
   transform: scale(1.1)
 }
@@ -160,12 +160,11 @@ body {
     font-size: var(--font-size-small-title);
     letter-spacing: 1px;
   }
+
   .text {
     font-size: var(--font-size-small-text);
   }
-  /* .successMessage {
-    font-size: var(--font-size-small-text);
-  } */
+
   .smallBtn {
     font-size: var(--font-size-small-text);
   }

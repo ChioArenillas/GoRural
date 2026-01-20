@@ -3,6 +3,7 @@ import { experiences } from "./db";
 export const getExperiences = () =>{
     return experiences.map(experience => {
         return {
+            id: experience.id,
             img: experience.image,
             title: experience.title,
             category: experience.category,
@@ -16,4 +17,9 @@ export const getExperiences = () =>{
             type: experience.type,
         }
     })
+}
+
+export const getExperiencesById = (idParam) => {
+    let experienceAux = experiences.find(experience => experience.id == idParam)
+    return experienceAux
 }
