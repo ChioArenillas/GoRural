@@ -23,3 +23,4 @@ export const getExperiencesById = (idParam) => {
     let experienceAux = experiences.find(experience => experience.id == idParam)
     return experienceAux
 }
+

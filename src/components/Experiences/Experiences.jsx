@@ -5,7 +5,7 @@ import { getExperiences } from '@/pages/api/userFecht';
 import Link from 'next/link';
 
 
-export default function Experiences() {
+export default function Experiences({excludeId = null, limit = null}) {
   
   const [ experiences, setExperiences] = useState([])
 
@@ -14,8 +14,17 @@ export default function Experiences() {
 
   useEffect(() => {
     let experiencesAux = getExperiences()
+
+    if (excludeId){
+      experiencesAux = experiencesAux.filter(
+        exp => exp.id !== Number(excludeId)
+      )
+    }
+    if (limit) {
+      experiencesAux = experiencesAux.slice(0, limit)
+    }
     setExperiences(experiencesAux)
-  }, [])
+  }, [excludeId, limit])
 
   //AÑADIR EL BUSCADOR Y EL FILTRO POR CATEGORÍA, 
   return (

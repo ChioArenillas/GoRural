@@ -26,6 +26,13 @@ export const experiences = [
       { user: "James R.", rating: 5, comment: "The food was incredible and the family was lovely." },
       { user: "Ana P.", rating: 4, comment: "Great cultural experience, highly recommended." },
     ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
+    ],
   },
 
   {
@@ -53,6 +60,13 @@ export const experiences = [
       { user: "Carlos G.", rating: 4, comment: "Fun and well organized adventure." },
       { user: "Emily T.", rating: 5, comment: "Beautiful scenery and great guide." },
       { user: "David L.", rating: 4, comment: "Perfect activity for nature lovers." },
+    ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
     ],
   },
 
@@ -82,6 +96,13 @@ export const experiences = [
       { user: "Peter W.", rating: 5, comment: "Real rural experience, loved it." },
       { user: "Lucía R.", rating: 4, comment: "Friendly farmers and great atmosphere." },
     ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
+    ],  
   },
 
   {
@@ -109,6 +130,13 @@ export const experiences = [
       { user: "Sophie A.", rating: 4, comment: "Creative and relaxing experience." },
       { user: "Juan C.", rating: 3, comment: "Nice workshop, could be longer." },
       { user: "Emma B.", rating: 4, comment: "Great for families and beginners." },
+    ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
     ],
   },
 
@@ -138,6 +166,13 @@ export const experiences = [
       { user: "Isabel M.", rating: 5, comment: "Very enjoyable and informative." },
       { user: "Thomas N.", rating: 4, comment: "Great local wine selection." },
     ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
+    ],
   },
 
   {
@@ -165,6 +200,13 @@ export const experiences = [
       { user: "Clara F.", rating: 4, comment: "Kids loved picking vegetables." },
       { user: "Miguel A.", rating: 4, comment: "Very natural and relaxing." },
       { user: "Sarah P.", rating: 5, comment: "Great way to connect with nature." },
+    ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
     ],
   },
 
@@ -194,6 +236,13 @@ export const experiences = [
       { user: "Alex J.", rating: 5, comment: "Very calm and enjoyable." },
       { user: "Nuria L.", rating: 4, comment: "Lovely animals and guides." },
     ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
+    ],
   },
 
   {
@@ -221,6 +270,13 @@ export const experiences = [
       { user: "Daniel H.", rating: 5, comment: "Very educational for kids." },
       { user: "María T.", rating: 5, comment: "Well organized and fun." },
       { user: "Olivia S.", rating: 4, comment: "Great learning experience." },
+    ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
     ],
   },
 
@@ -250,6 +306,13 @@ export const experiences = [
       { user: "Helen W.", rating: 5, comment: "Great guide and route." },
       { user: "Luis C.", rating: 4, comment: "Well paced hike." },
     ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
+    ],
   },
 
   {
@@ -277,6 +340,13 @@ export const experiences = [
       { user: "Antonio R.", rating: 5, comment: "Delicious cheeses!" },
       { user: "Julia M.", rating: 4, comment: "Very informative tasting." },
       { user: "Mark S.", rating: 5, comment: "Excellent local products." },
+    ],
+    pictures: [
+       "/assets/img/picture1.jpg",
+        "/assets/img/picture2.jpg",
+        "/assets/img/picture3.jpg",
+        "/assets/img/picture4.jpg",
+        "/assets/img/picture5.jpg",
     ],
   },
 ];

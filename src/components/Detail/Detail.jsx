@@ -1,7 +1,9 @@
 import styles from "./Detail.module.css"
 import { useRouter } from 'next/router'
-import { getExperiencesById } from "@/pages/api/userFecht"
+import { getExperiencesById, getOtherExperiences } from "@/pages/api/userFecht"
 import React from 'react'
+import Link from "next/link"
+import Experiences from "../Experiences/Experiences"
 
 export default function Detail() {
 
@@ -9,23 +11,28 @@ export default function Detail() {
     const { id } = router.query
 
     const experience = getExperiencesById(id)
+    if (!experience) {
+      return <p>Loading...</p>
+    }
 
   return (
     <div className={styles.details}>
-      <img  className={styles.experienceImage} src={experience.img} alt={experience.title} />
-      <h1 className={styles.title}>{experience.title}</h1>
+       <img  className={styles.experienceImage} src={experience.image} alt={experience.title} />
+        <h1 className={styles.title}>{experience.title}</h1>
         <p className={styles.experienceRating}> ⭐ {experience.rating} ({experience.reviews})</p>
         <p className={styles.experienceInfo}>{experience.description}</p>
       <h1 className={styles.subtitle}>Details</h1>
-        <p className={styles.experienceInfo}> ⏱️ Duration: {experience.duration}</p>
-        <p className={styles.experienceInfo}> 👩‍🍳 Includes: {experience.includes}</p>
-        <p className={styles.experienceInfo}> 🏡 Location: {experience.location}</p>
-        <p className={styles.experienceInfo}> 🗣️ Languages: {experience.languages}</p>
-        <p className={styles.experienceInfo}> ♿ Accessibility: {experience.accessibility}</p>
-        <p className={styles.experienceInfo}> 👨‍👩‍👧‍👦 Recommended For: {experience.recommendedFor}</p>
-        <p className={styles.experienceInfo}> 🔁 Cancellation Policy: {experience.cancellationPolicy}</p>
-        <p className={styles.experienceInfo}> ❤️ Optional Donation: {experience.optionalDonation}</p>
-        <p className={styles.experienceInfo}> 👥 Group Size: {experience.groupSize}</p>
+      <div className={styles.experienceInfo}>
+        <p> ⏱️ Duration: {experience.duration}</p>
+        <p> 👩‍🍳 Includes: {experience.includes}</p>
+        <p> 🏡 Location: {experience.location}</p>
+        <p> 🗣️ Languages: {experience.languages}</p>
+        <p> ♿ Accessibility: {experience.accessibility}</p>
+        <p> 👨‍👩‍👧‍👦 Recommended For: {experience.recommendedFor}</p>
+        <p> 🔁 Cancellation Policy: {experience.cancellationPolicy}</p>
+        <p> ❤️ Optional Donation: {experience.optionalDonation}</p>
+        <p> 👥 Group Size: {experience.groupSize}</p>
+      </div>
       <div className={styles.reviews}> 
 
         <h1 className={styles.subtitle}>Reviews:</h1>
@@ -42,13 +49,21 @@ export default function Detail() {
       }
       </div>
       <div>
+        {experience.pictures && experience.pictures.length > 0 && (
+          <div>
         <h1 className={styles.subtitle}>Pictures:</h1>
-        <p className={styles.experiencePictures}> {experience.pictures}</p>
-      </div>
+        <div>
+        {experience.pictures.map((src, index) => (
+          <img key={index} src={src} className={styles.pictures}/>
+        ))}
+        </div>
+        </div>
+        )}
       <div>
         <h1 className={styles.subtitle}>Others:</h1>
-        <p className={styles.experienceCard}> </p> {/* Tarjetas de otras experiencias */}
+        <Experiences excludeId={id} limit={5}/>
       </div>
     </div>
+  </div>
   )
 }
