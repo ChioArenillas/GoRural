@@ -1,5 +1,6 @@
 import { experiences } from "./db";
 import { FAQs } from "./dbFAQs";
+import { news } from "./dbNews";
 
 export const getExperiences = () =>{
     return experiences.map(experience => {
@@ -32,4 +33,19 @@ export const getFAQs = () => {
             answer: faq.answer,
         }
     })
+}
+
+export const getNews = () => {
+    return news.map(item => {
+        return {
+            id: item.id,
+            img: item.image,
+            title: item.title,
+            description: item.description,
+        }
+    })
+}
+export const getNewsById = (idParam) => {
+    let newsAux = news.find(item => item.id == idParam)
+    return newsAux
 }

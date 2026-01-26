@@ -1,8 +1,8 @@
-import styles from "./Detail.module.css"
+import styles from "./Experiences.module.css"
 import { useRouter } from 'next/router'
 import { getExperiencesById, getOtherExperiences } from "@/pages/api/userFecht"
 import React from 'react'
-import Experiences from "../Experiences/Experiences"
+import Experiences from "./Experiences"
 
 export default function Detail() {
 
@@ -15,6 +15,7 @@ export default function Detail() {
     }
 
   return (
+    <div className={styles.component}>
     <div className={styles.details}>
        <img  className={styles.experienceImage} src={experience.image} alt={experience.title} />
         <h1 className={styles.title}>{experience.title}</h1>
@@ -63,6 +64,7 @@ export default function Detail() {
         <Experiences excludeId={id} limit={5}/>
       </div>
     </div>
+  </div>
   </div>
   )
 }

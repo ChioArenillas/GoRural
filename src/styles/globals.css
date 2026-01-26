@@ -23,9 +23,13 @@ body {
   text-transform: capitalize;
 }
 
+.component {
+  margin: 10%;
+}
+
 /* CARDS */
 
-.experiencesList {
+.cardList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,7 +47,7 @@ body {
   cursor: pointer;
 }
 
-.experienceCard {
+.card {
   background-color: var(--color-bg);
   padding: 15px;
   border-radius: 5px;
@@ -51,23 +55,23 @@ body {
   height: 300px;
 }
 
-.experienceCard:hover {
+.card:hover {
   transform: scale(1.06);
 }
 
-.experienceCardDetails {
+.cardDetails {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-.experienceDetailsTop {
+.cardDetailsTop {
   display: flex;
   flex-direction: column;
 }
 
-.experienceImage {
+.cardImage {
   height: 140px;
   width: calc(100% + 30px);
   object-fit: cover;
@@ -76,7 +80,7 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.experienceCategorie {
+.cardCategorie {
   width: fit-content;
   font-size: var(--font-size-small-text);
   background-color: var(--color-secondary);
@@ -86,21 +90,21 @@ body {
   color: var(--color-text-light);
 }
 
-.experienceTitle {
+.cardTitle {
   margin: 5px;
 }
 
-.experienceDuration {
+.cardDuration {
   font-size: var(--font-size-small-text);
   margin: 5px;
 }
 
-.experienceDetailsBottom {
+.cardDetailsBottom {
   display: flex;
   justify-content: space-between;
 }
 
-.experiencePrice {
+.cardPrice {
   margin: 0;
   background-color: var(--color-dark);
   padding: 6px;
@@ -108,7 +112,7 @@ body {
   color: var(--color-text-light);
 }
 
-.experienceRating {
+.cardRating {
   margin: 0;
 }
 

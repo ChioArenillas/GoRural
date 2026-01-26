@@ -1,7 +1,7 @@
 import FAQsPage from '@/pages/FAQsPage'
 import React, { useEffect, useState } from 'react'
-import { FAQs } from '@/pages/api/dbFAQs'
 import { getFAQs } from '@/pages/api/userFecht'
+import styles from "@/components/FAQs/FAQs.module.css"
 
 export default function Faqs() {
 
@@ -13,7 +13,8 @@ export default function Faqs() {
     }, [])
 
   return (
-    <div>
+    <div className={styles.component}>
+        <h2 className={styles.title}>FAQs</h2>
         {faqs.map((faq, index) => (
             <div key={index}>
                 <h2>{faq.question}</h2>

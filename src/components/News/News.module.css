@@ -1,0 +1,10 @@
+@import "../../styles/vars.css";
+@import "../../styles/globals.css";
+
+.cardDetailsBottom {
+    justify-content: right;
+}
+
+.card:hover {
+    transform: none;
+}
