@@ -2,7 +2,6 @@ import styles from "./Detail.module.css"
 import { useRouter } from 'next/router'
 import { getExperiencesById, getOtherExperiences } from "@/pages/api/userFecht"
 import React from 'react'
-import Link from "next/link"
 import Experiences from "../Experiences/Experiences"
 
 export default function Detail() {

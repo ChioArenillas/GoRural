@@ -1,4 +1,5 @@
 import { experiences } from "./db";
+import { FAQs } from "./dbFAQs";
 
 export const getExperiences = () =>{
     return experiences.map(experience => {
@@ -24,3 +25,11 @@ export const getExperiencesById = (idParam) => {
     return experienceAux
 }
 
+export const getFAQs = () => {
+    return FAQs.map(faq => {
+        return {
+            question: faq.question,
+            answer: faq.answer,
+        }
+    })
+}
