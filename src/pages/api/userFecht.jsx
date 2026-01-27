@@ -49,3 +49,8 @@ export const getNewsById = (idParam) => {
     let newsAux = news.find(item => item.id == idParam)
     return newsAux
 }
+export const getLocations = () => {
+    const cities = experiences.map(exp => exp.city);
+    return  [... new Set(cities)];
+}
+

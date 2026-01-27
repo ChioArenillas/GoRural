@@ -51,8 +51,8 @@ body {
   background-color: var(--color-bg);
   padding: 15px;
   border-radius: 5px;
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 280px;
 }
 
 .card:hover {
@@ -92,6 +92,11 @@ body {
 
 .cardTitle {
   margin: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .cardDuration {
@@ -158,6 +163,7 @@ body {
   text-decoration: none;
   color: var(--color-btn-text);
 }
+
 
 @media screen and (max-width: 830px) {
   .title {

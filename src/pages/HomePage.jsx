@@ -1,16 +1,10 @@
-import Hero from '@/components/Hero/Hero'
 import React from 'react'
+import Home from '@/components/Home/Home'
 
 export default function HomePage() {
-    return (
-        <div>
-            <Hero />
-{/*             
-            <Buscador />
-            <Categories />
-            <MostPopular />
-            <ForFamilies />
-            <Destinations /> */}
-        </div>
-    )
+  return (
+    <div>
+      <Home />
+    </div>
+  )
 }
