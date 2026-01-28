@@ -20,25 +20,21 @@ export default function locations() {
   return (
 
     <div className={styles.cardList}>
-      {locations.map((experience) => (
-        <div key={experience.id}>
+      {locations.map((location) => (
+        <div key={location.id}>
           <div className={styles.card}>
-            <div className={styles.cardDetails}>
-              <div className={styles.cardDetailsTop}>
-                <img src={experience.img} alt={experience.title} className={styles.cardImage} />
-                <h3 className={styles.cardTitle}>{experience.city}</h3>
-              </div >
-              <div className={styles.cardDetailsBottom}>
-                <button className={styles.smallBtn}>
-                  <Link className={styles.cardLink} href={{
-                    pathname: 'DetaillocationsPage',  
-                    query: {
-                      id: experience.id
-                    }
-                  }}>Read more</Link>
+            <Link className={styles.cardLink} href={{
+              pathname: 'DetaillocationsPage',
+              query: {
+                id: location.id
+              }
+            }}>
+              <div className={styles.cardDetails}>
+                <img src={location.img} alt={location.name} className={styles.cardImage} />
+                <button className={styles.smallBtn}>{location.name}
                 </button>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       ))}

@@ -1,8 +1,9 @@
 import { experiences } from "./db";
 import { FAQs } from "./dbFAQs";
 import { news } from "./dbNews";
+import { locations } from "./dbLocations"
 
-export const getExperiences = () =>{
+export const getExperiences = () => {
     return experiences.map(experience => {
         return {
             id: experience.id,
@@ -50,7 +51,12 @@ export const getNewsById = (idParam) => {
     return newsAux
 }
 export const getLocations = () => {
-    const cities = experiences.map(exp => exp.city);
-    return  [... new Set(cities)];
+    return locations.map(location => {
+        return {
+            title: location.name,
+            img: location.image,
+            name: location.name,
+        }
+    })
 }
 

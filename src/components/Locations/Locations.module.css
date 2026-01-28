@@ -5,13 +5,23 @@
 .card {
   width: 150px;
   height: 230px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
-
-.cardDetailsBottom {
-    justify-content: right;
+.cardImage{
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-.card:hover {
+.smallBtn {
+    background-color: var(--color-dark);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.smallBtn:hover{
     transform: none;
 }
