@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getLocations } from '@/pages/api/userFecht';
 
 
-export default function locations() {
+export default function Locations() {
 
   const [locations, setLocations] = useState([])
 
