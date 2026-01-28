@@ -53,10 +53,20 @@ export const getNewsById = (idParam) => {
 export const getLocations = () => {
     return locations.map(location => {
         return {
+            id: location.id,
             title: location.name,
             img: location.image,
             name: location.name,
         }
     })
 }
+export const getLocationsById = (idParam) => {
+    let locationAux = locations.find(location => location.id == idParam)
+    return locationAux
+}
+export const getExperiencesByLocation = (locationName) => {
+    return experiences.filter(exp =>
+        exp.locationId.includes(locationName)
+    )
 
+}

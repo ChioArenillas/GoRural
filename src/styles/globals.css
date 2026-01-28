@@ -51,8 +51,8 @@ body {
   background-color: var(--color-bg);
   padding: 15px;
   border-radius: 5px;
-  width: 150px;
-  height: 280px;
+  width: 200px;
+  height: 320px;
 }
 
 .card:hover {
@@ -76,10 +76,13 @@ body {
   width: calc(100% + 30px);
   object-fit: cover;
   display: block;
-  margin: -15px -15px 5px -15px;
+  margin: -15px -15px 0px -15px;
   border-radius: 5px 5px 0 0;
 }
-
+.cardCategorieSection {
+  display: flex;
+  flex-wrap: wrap;
+}
 .cardCategorie {
   width: fit-content;
   font-size: var(--font-size-small-text);

@@ -24,7 +24,7 @@ export default function locations() {
         <div key={location.id}>
           <div className={styles.card}>
             <Link className={styles.cardLink} href={{
-              pathname: 'DetaillocationsPage',
+              pathname: 'DetailLocationsPage',
               query: {
                 id: location.id
               }

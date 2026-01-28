@@ -42,8 +42,10 @@ export default function Experiences({excludeId = null, limit = null}) {
               <div className={styles.cardDetails}>
                 <div className={styles.cardDetailsTop}>
                   <img src={experience.img} alt={experience.title} className={styles.cardImage}/>
-                  <p className={styles.cardCategorie}>{experience.category}</p>
-                  <h3 className={styles.cardTitle}>{experience.title}</h3>
+                  <div className={styles.cardCategorieSection}>
+                    {experience.category.map((c, index) => (
+                      <span key={index} className={styles.cardCategorie} >{c}</span>
+                  ))} </div>                  <h3 className={styles.cardTitle}>{experience.title}</h3>
                   <p className={styles.cardDuration}>{experience.duration}</p>
                 </div>
                 <div className={styles.cardDetailsBottom}>
