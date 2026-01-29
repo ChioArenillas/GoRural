@@ -2,6 +2,7 @@ import { experiences } from "./db";
 import { FAQs } from "./dbFAQs";
 import { news } from "./dbNews";
 import { locations } from "./dbLocations"
+import { languages, recommendedFor } from "./filters";
 
 export const getExperiences = () => {
     return experiences.map(experience => {
@@ -18,6 +19,8 @@ export const getExperiences = () => {
             rating: experience.rating,
             reviews: experience.reviews,
             type: experience.type,
+            language: experience.language,
+            recommended: experience.recommended,
         }
     })
 }

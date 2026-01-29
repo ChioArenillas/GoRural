@@ -32,15 +32,7 @@ export default function Home() {
           <button className={styles.smallBtn}> <a className={styles.btnLink} href={'../../NewsPage'}>ALL NEWS</a></button>
         </div>
       </div>
-
-      {/*             
-            <Buscador />
-            <Categories />
-            <MostPopular />
-            <ForFamilies />
-            <Opiniones /> */}
     </div>
-
   )
 }
 
