@@ -1,4 +1,54 @@
 @import "../../styles/vars.css";
 @import "../../styles/globals.css";
+@import "../Hero/Hero.module.css";
+
+.experienceImage {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.title{
+    color: var(--color-text-dark);
+    letter-spacing: 1px;
+}
+.subtitle {
+    margin: 30px 10px;
+}
+.reviewSection{
+    display: flex;
+    gap: 15px;
+}
+.reviewCard{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);  padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+    gap: 10px;
+
+}
+.reviewCardTop{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.reviewComment{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.picturesList{
+    display: flex;
+    gap: 15px;
+}
+.pictures{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
 
 

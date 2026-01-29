@@ -15,15 +15,18 @@ export default function DetailNew() {
     }
 
     return (
-        <div className={styles.component}>
-            <div className={styles.details}>
-                <img className={styles.itemImage} src={item.image} alt={item.title} />
-                <h1 className={styles.title}>{item.title}</h1>
-                <p className={styles.itemInfo}>{item.description}</p>
-            </div>
-            <div>
-                <h1 className={styles.subtitle}>Others:</h1>
-                <News excludeId={id} limit={5} />
+        <div>
+            <img className={styles.itemImage} src={item.image} alt={item.title} />
+
+            <div className={styles.component}>
+                <div className={styles.details}>
+                    <h1 className={styles.title}>{item.title}</h1>
+                    <p className={styles.itemInfo}>{item.description}</p>
+                </div>
+                <div>
+                    <h1 className={styles.subtitle}>More News:</h1>
+                    <News excludeId={id} limit={5} />
+                </div>
             </div>
         </div>
     )

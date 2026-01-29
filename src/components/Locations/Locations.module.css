@@ -1,7 +1,9 @@
 @import "../../styles/vars.css";
 @import "../../styles/globals.css";
 
-
+.cardList{
+  background-color: var(--color-bg);
+}
 .card {
   width: 150px;
   height: 230px;

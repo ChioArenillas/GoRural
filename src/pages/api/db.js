@@ -19,7 +19,7 @@ export const experiences = [
     accessibility: "Suitable for people with reduced mobility and all ages",
     recommendedFor: ["Families", "Groups", "Seniors"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: true,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Small to medium-sized groups",
     opinions: [
       { user: "Laura M.", rating: 5, comment: "Amazing experiences, very authentic and welcoming." },
@@ -54,7 +54,7 @@ export const experiences = [
     accessibility: "Not suitable for reduced mobility",
     recommendedFor: ["Adults", "Adventure seekers"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "There is not option to donate",
     groupSize: "Small groups",
     opinions: [
       { user: "Carlos G.", rating: 4, comment: "Fun and well organized adventure." },
@@ -89,7 +89,7 @@ export const experiences = [
     accessibility: "Limited accessibility",
     recommendedFor: ["Groups", "Families"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: true,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Small to medium-sized groups",
     opinions: [
       { user: "Marta S.", rating: 5, comment: "Very educational and fun for kids." },
@@ -124,7 +124,7 @@ export const experiences = [
     accessibility: "Suitable for all ages",
     recommendedFor: ["Families", "Groups"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "There is not option to donate",
     groupSize: "Small groups",
     opinions: [
       { user: "Sophie A.", rating: 4, comment: "Creative and relaxing experiences." },
@@ -159,7 +159,7 @@ export const experiences = [
     accessibility: "Suitable for adults only",
     recommendedFor: ["Adults", "Groups"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Small groups",
     opinions: [
       { user: "Robert K.", rating: 5, comment: "Excellent wines and explanations." },
@@ -194,7 +194,7 @@ export const experiences = [
     accessibility: "Limited accessibility",
     recommendedFor: ["Families", "Groups"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: true,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Medium-sized groups",
     opinions: [
       { user: "Clara F.", rating: 4, comment: "Kids loved picking vegetables." },
@@ -229,7 +229,7 @@ export const experiences = [
     accessibility: "Suitable for children",
     recommendedFor: ["Families"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "There is not option to donate",
     groupSize: "Small groups",
     opinions: [
       { user: "Paula D.", rating: 5, comment: "Perfect for children." },
@@ -264,7 +264,7 @@ export const experiences = [
     accessibility: "Suitable for all ages",
     recommendedFor: ["Families", "Schools"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: true,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Medium-sized groups",
     opinions: [
       { user: "Daniel H.", rating: 5, comment: "Very educational for kids." },
@@ -299,7 +299,7 @@ export const experiences = [
     accessibility: "Not suitable for reduced mobility",
     recommendedFor: ["Groups", "Hikers"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Small groups",
     opinions: [
       { user: "Sergio P.", rating: 4, comment: "Beautiful landscapes." },
@@ -334,7 +334,7 @@ export const experiences = [
     accessibility: "Suitable for adults",
     recommendedFor: ["Adults", "Groups"],
     cancellationPolicy: "Free cancellation up to 24 hours in advance",
-    optionalDonation: false,
+    optionalDonation: "You can donate a optional ammount",
     groupSize: "Small groups",
     opinions: [
       { user: "Antonio R.", rating: 5, comment: "Delicious cheeses!" },

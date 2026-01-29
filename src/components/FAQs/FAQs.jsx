@@ -14,7 +14,6 @@ export default function Faqs() {
 
   return (
     <div className={styles.component}>
-        <h2 className={styles.title}>FAQs</h2>
         {faqs.map((faq, index) => (
             <div key={index}>
                 <h2>{faq.question}</h2>

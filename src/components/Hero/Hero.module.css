@@ -6,6 +6,14 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
 }
 
 .heroimg {
@@ -35,7 +43,7 @@
     text-align: center;
 }
 
-.subtitle {
+.heroSubtitle {
     display: inline-block;
     font-size: var(--font-size-title);
     font-weight: bold;

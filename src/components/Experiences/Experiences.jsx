@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import styles from "./Experiences.module.css";
-import { getExperiences } from '@/pages/api/userFecht';
-import Link from 'next/link';
+import styles from "./Experiences.module.css"
+import { getExperiences } from '@/pages/api/userFecht'
+import Link from 'next/link'
 
 
-export default function Experiences({excludeId = null, limit = null}) {
-  
-  const [ experiences, setExperiences] = useState([])
+export default function Experiences({ excludeId = null, limit = null }) {
+
+  const [experiences, setExperiences] = useState([])
 
   const router = useRouter()
   const { id } = router.query
@@ -15,7 +15,7 @@ export default function Experiences({excludeId = null, limit = null}) {
   useEffect(() => {
     let experiencesAux = getExperiences()
 
-    if (excludeId){
+    if (excludeId) {
       experiencesAux = experiencesAux.filter(
         exp => exp.id !== Number(excludeId)
       )
@@ -28,35 +28,35 @@ export default function Experiences({excludeId = null, limit = null}) {
 
   //AÑADIR EL BUSCADOR Y EL FILTRO POR CATEGORÍA, 
   return (
-
-<div className={styles.cardList}>
-  {experiences.map((experience) => (
-      <div key={experience.id}>
-        <div className={styles.card}>
-          <Link className={styles.cardLink} href={{
-            pathname: 'DetailPage',
-            query: {
-              id: experience.id
-            }
-            }}>
-              <div className={styles.cardDetails}>
-                <div className={styles.cardDetailsTop}>
-                  <img src={experience.img} alt={experience.title} className={styles.cardImage}/>
-                  <div className={styles.cardCategorieSection}>
-                    {experience.category.map((c, index) => (
-                      <span key={index} className={styles.cardCategorie} >{c}</span>
-                  ))} </div>                  <h3 className={styles.cardTitle}>{experience.title}</h3>
-                  <p className={styles.cardDuration}>{experience.duration}</p>
+      <div className={styles.cardList}>
+        {experiences.map((experience) => (
+          <div key={experience.id}>
+            <div className={styles.card}>
+              <Link className={styles.cardLink} href={{
+                pathname: 'DetailPage',
+                query: {
+                  id: experience.id
+                }
+              }}>
+                <div className={styles.cardDetails}>
+                  <div className={styles.cardDetailsTop}>
+                    <img src={experience.img} alt={experience.title} className={styles.cardImage} />
+                    <div className={styles.cardCategorieSection}>
+                      {experience.category.map((c, index) => (
+                        <span key={index} className={styles.cardCategorie} >{c}</span>
+                      ))} </div>                  
+                      <h3 className={styles.cardTitle}>{experience.title}</h3>
+                    <p className={styles.cardDuration}>{experience.duration}</p>
+                  </div>
+                  <div className={styles.cardDetailsBottom}>
+                    <p className={styles.cardPrice}>{experience.price}{experience.currency}</p>
+                    <p className={styles.cardRating}> ⭐ {experience.rating} ({experience.reviews})</p>
+                  </div>
                 </div>
-                <div className={styles.cardDetailsBottom}>
-                  <p className={styles.cardPrice}>{experience.price}{experience.currency}</p>
-                  <p className={styles.cardRating}> ⭐ {experience.rating} ({experience.reviews})</p>
-                </div>
-              </div>
-          </Link>
-        </div>
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-    </div>
   )
 }

@@ -22,9 +22,15 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+.subtitle {
+  font-size: var(--font-size-title);
+  color: var(--color-text-dark);
+  font-weight: bold;
+}
 
 .component {
-  margin: 10%;
+  margin: 5% 10%;
+  color: var(--color-text-dark);
 }
 
 /* CARDS */
@@ -33,7 +39,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--color-primary);
   gap: 15px;
   padding: 50px;
 }
@@ -49,7 +54,7 @@ body {
 
 .card {
   background-color: var(--color-bg);
-  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);  padding: 15px;
   border-radius: 5px;
   width: 200px;
   height: 320px;

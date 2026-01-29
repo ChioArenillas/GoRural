@@ -2,3 +2,18 @@
 @import "../../styles/globals.css";
 
     
+.title {
+  background-color: var(--color-primary);
+  padding: 20px;
+  padding-left: 10%;
+  margin-bottom: -20px;
+}
+.btnSection{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.smallBtn{
+    background-color: var(--color-dark);
+
+}

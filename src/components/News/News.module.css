@@ -1,12 +1,16 @@
 @import "../../styles/vars.css";
 @import "../../styles/globals.css";
 
+.itemImage {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
 
 .card {
   width: 150px;
   height: 230px;
 }
-
 
 .cardDetailsBottom {
     justify-content: right;
@@ -14,4 +18,7 @@
 
 .card:hover {
     transform: none;
+}
+.smallBtn{
+    background-color: var(--color-dark);
 }
