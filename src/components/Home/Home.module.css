@@ -1,19 +1,32 @@
 @import "../../styles/vars.css";
 @import "../../styles/globals.css";
+@import "../Experiences/Experiences.module.css";
 
-    
 .title {
-  background-color: var(--color-primary);
-  padding: 20px;
-  padding-left: 10%;
+  padding: 30px;
   margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+
 }
-.btnSection{
+
+.btnSection {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
-.smallBtn{
-    background-color: var(--color-dark);
 
+.smallBtn {
+  background-color: var(--color-dark);
+
+}
+
+.backgroundSection {
+  background-color: var(--color-primary);
+}
+
+.reviewSection {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
 }

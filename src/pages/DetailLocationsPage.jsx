@@ -1,8 +1,8 @@
 import React from 'react'
 import DetailLocations from '@/components/Locations/DetailLocations'
-import styles from "@/components/Hero/Hero.module.css"
 import { locations } from './api/dbLocations'
 import { useRouter } from 'next/router'
+import styles from "@/components/Locations/Locations.module.css"
 
 export default function DetailLocationsPage() {
 
@@ -19,8 +19,8 @@ export default function DetailLocationsPage() {
           alt={location.name}
           className={styles.heroimg}
         />
-        <div className={styles.text}>
-          <h2 className={styles.title}>{location.name}</h2>
+        <div className={styles.heroText}>
+          <h2 className={styles.heroTitle}>{location.name}</h2>
         </div>
       </div>
 

@@ -33,6 +33,94 @@ body {
   color: var(--color-text-dark);
 }
 
+/* HERO */
+
+.hero {
+    block-size: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.heroimg {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heroText {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    text-transform: uppercase ;
+}
+
+.heroTitle {
+    font-size: calc(var(--font-size-title)*1.2);
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 10px;
+    margin: 0px 10%;
+    text-align: center;
+    text-transform: uppercase ;
+}
+
+.heroSubtitle {
+    display: inline-block;
+    font-size: var(--font-size-title);
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--color-dark);
+    padding: 8px 16px; 
+    border-radius: 12px; 
+}
+
+
+
+@media (max-width: 830px) {
+    .heroTitle {
+        font-size: calc(var(--font-size-small-title)*1.2);
+        letter-spacing: 4px;
+    }
+    .heroSubtitle {
+        font-size: calc(var(--font-size-small-title)*0.8);
+    }
+}
+
+@media (max-width: 700px) {
+    .hero * {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .heroText {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .heroTitle {
+        letter-spacing: 1 !important;
+    }
+
+    .heroSubtitle {
+        font-size: calc(var(--font-size-small-title)*0.8);
+    }
+}
 /* CARDS */
 
 .cardList {

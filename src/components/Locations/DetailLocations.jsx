@@ -34,7 +34,7 @@ export default function ExperiencesByLocation() {
             }}>
               <div className={styles.cardDetails}>
                 <div className={styles.cardDetailsTop}>
-                  <img src={experience.image} alt={experience.title} className={styles.cardImage} />
+                  <img src={experience.img} alt={experience.title} className={styles.cardImage} />
                   <div className={styles.cardCategorieSection}>
                     {experience.category.map((c, index) => (
                       <span key={index} className={styles.cardCategorie} >{c}</span>

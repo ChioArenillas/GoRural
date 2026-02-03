@@ -2,16 +2,15 @@ import { experiences } from "./db";
 import { FAQs } from "./dbFAQs";
 import { news } from "./dbNews";
 import { locations } from "./dbLocations"
-import { languages, recommendedFor } from "./filters";
 
 export const getExperiences = () => {
     return experiences.map(experience => {
         return {
             id: experience.id,
-            img: experience.image,
+            img: experience.img,
             title: experience.title,
             category: experience.category,
-            city: experience.city,
+            locationId: experience.locationId,
             description: experience.description,
             duration: experience.duration,
             price: experience.price,
@@ -71,5 +70,10 @@ export const getExperiencesByLocation = (locationName) => {
     return experiences.filter(exp =>
         exp.locationId.includes(locationName)
     )
+}
 
+export const getOtherExperiences = (idParam) => {
+    return experiences.filter(exp =>
+        exp.id != idParam
+    )
 }

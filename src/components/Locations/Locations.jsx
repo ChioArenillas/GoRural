@@ -7,7 +7,7 @@ import { getLocations } from '@/pages/api/userFecht';
 
 export default function Locations() {
 
-  const [locations, setLocations] = useState([])
+   const [locations, setLocations] = useState([])
 
   const router = useRouter()
   const { id } = router.query
@@ -15,7 +15,7 @@ export default function Locations() {
   useEffect(() => {
     let locationsAux = getLocations()
     setLocations(locationsAux)
-  }, [])
+  }, []) 
 
   return (
 

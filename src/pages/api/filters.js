@@ -13,12 +13,6 @@ export const categories = [
   "Workshops"
 ];
 
-export const types = [
-  "Family",
-  "Groups",
-  "Popular"
-];
-
 export const languages = [
   "English",
   "Spanish"

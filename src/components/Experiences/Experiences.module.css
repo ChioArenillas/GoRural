@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin: 30px;
 }
 
 .search {
@@ -31,9 +32,6 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 14px;
-}
-.filtersSection{
-    margin: 30px;
 }
 .filters {
   display: flex;
@@ -68,6 +66,11 @@
   color: var(--color-card-bg);
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .reviewSection{
     display: flex;
     gap: 15px;
@@ -86,6 +89,7 @@
     display: flex;
     justify-content: space-between;
     margin: 5px;
+    font-weight: bold;
 }
 .reviewComment{
   overflow: hidden;
