@@ -23,12 +23,13 @@
 .search {
   position: relative;
   width: 100%;
+  margin: 0;
   max-width: 500px;
 }
 
 .search input {
-  width: 100%;
-  padding: 10px 36px 10px 12px;
+  width: 90%;
+  padding: 10px 10px 10px 12px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 14px;
@@ -40,7 +41,6 @@
 }
 .filterItem {
   position: relative;
-  min-width: 160px;
 }
 
 .filterItem select {
@@ -81,7 +81,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);  padding: 15px;
     border-radius: 5px;
     width: 200px;
-    height: 100px;
+    height: auto;
+    min-height: fit-content;
     gap: 10px;
 
 }
@@ -108,5 +109,9 @@
     width: 200px;
 }
 
-
-
+@media (max-width: 600px) {
+.pictures {
+    width: 150px;
+    height: 100px;
+}
+}

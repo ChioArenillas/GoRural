@@ -3,8 +3,8 @@
 @import "../Experiences/Experiences.module.css";
 
 .title {
-  padding: 30px;
-  margin-bottom: -20px;
+  padding: 20px;
+  margin-bottom: -30px;
   display: flex;
   justify-content: center;
 
@@ -27,6 +27,8 @@
 
 .reviewSection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 40px;
 }
+

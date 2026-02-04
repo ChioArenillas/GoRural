@@ -9,7 +9,7 @@ export default function Hero() {
     <div className={styles.hero} >
       <Image className={styles.heroimg} src={HeroPicture} alt="HeroImagen" />
       <div className={styles.heroText}>
-          <h2 className={styles.heroTitle}>Enjoy a 10% discount on your first rural experience.</h2>
+          <h2 className={styles.heroTitle}>Enjoy a 10% discount on your first rural experience</h2>
           <h3 className={styles.heroSubtitle}>CODE: GORURAL10</h3>
       </div>
     </div>

@@ -340,3 +340,12 @@ export const experiences = [
     ],
   },
 ];
+
+
+export const opinions = [
+  { user: "Laura M.", rating: 5, comment: "Amazing experiences, very authentic and welcoming." },
+  { user: "Helen W.", rating: 5, comment: "Great guide and route." },
+  { user: "Paula D.", rating: 5, comment: "Perfect for children." },
+  { user: "Alex J.", rating: 5, comment: "Very calm and enjoyable." },
+  { user: "Julia M.", rating: 4, comment: "Very informative tasting." },
+]

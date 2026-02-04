@@ -22,3 +22,10 @@
 .smallBtn{
     background-color: var(--color-dark);
 }
+
+@media (max-width: 600px) {
+.card {
+  height: 180px;
+  width: 100px;
+}
+}

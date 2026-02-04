@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { getExperiencesById, getOtherExperiences } from "@/pages/api/userFecht"
 import React from 'react'
 import Experiences from "./Experiences"
-import { experiences } from "@/pages/api/db"
 
 export default function Detail() {
 
@@ -62,7 +61,7 @@ export default function Detail() {
           </div>
           <div className={styles.reviews}>
             <h1 className={styles.subtitle}>Reviews:</h1>
-            <div className={styles.reviewSection}>
+            <div className={styles.scroll}>
               {experience.opinions && experience.opinions.length > 0 ? (
                 experience.opinions.map((opinion, index) => (
                   <div key={index} className={styles.reviewCard}>
@@ -84,19 +83,19 @@ export default function Detail() {
             {experience.pictures && experience.pictures.length > 0 && (
               <div>
                 <h1 className={styles.subtitle}>Pictures:</h1>
+                <div className={styles.scroll}>
                 <div className={styles.picturesList}>
                   {experience.pictures.map((src, index) => (
                     <img key={index} src={src} className={styles.pictures} />
                   ))}
                 </div>
+                </div>
               </div>
             )}
-            <div>
-            </div>
           </div>
           <div>
             <h1 className={styles.subtitle}>More Experiences:</h1>
-            <Experiences experiences={otherExperiences} />
+            <Experiences experiences={otherExperiences} horizontal={true} />
           </div>
         </div>
       </div>
