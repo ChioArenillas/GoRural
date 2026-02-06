@@ -1,7 +1,7 @@
 import FAQsPage from '@/pages/FAQsPage'
 import React, { useEffect, useState } from 'react'
 import { getFAQs } from '@/pages/api/userFecht'
-import styles from "@/components/FAQs/FAQs.module.css"
+import styles from "@/components/06_FAQs/FAQs.module.css"
 
 export default function Faqs() {
 

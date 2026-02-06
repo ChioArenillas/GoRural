@@ -349,3 +349,12 @@ export const opinions = [
   { user: "Alex J.", rating: 5, comment: "Very calm and enjoyable." },
   { user: "Julia M.", rating: 4, comment: "Very informative tasting." },
 ]
+
+
+export const pictures = [
+    "/assets/experiences/picture1.jpg",
+    "/assets/experiences/picture2.jpg",
+    "/assets/experiences/picture3.jpg",
+    "/assets/experiences/picture4.jpg",
+    "/assets/experiences/picture5.jpg",
+]

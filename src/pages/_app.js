@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import Navbar from '@/components/Navbar/Navbar'
+import Navbar from '@/components/00_Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
 
 import React from 'react'

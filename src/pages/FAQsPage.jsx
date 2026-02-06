@@ -1,6 +1,6 @@
 import React from 'react'
-import FAQs from '@/components/FAQs/FAQs'
-import styles from "@/components/FAQs/FAQs.module.css"
+import FAQs from '@/components/06_FAQs/FAQs'
+import styles from "@/components/06_FAQs/FAQs.module.css"
 
 export default function FAQsPage() {
   return (

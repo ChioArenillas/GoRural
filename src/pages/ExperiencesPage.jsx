@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import styles from "@/components/Experiences/Experiences.module.css"
+import styles from "@/components/03_Experiences/Experiences.module.css"
 import { getExperiences } from './api/userFecht'
 import { useState } from 'react'
-import Experiences from '@/components/Experiences/Experiences'
+import Experiences from '@/components/03_Experiences/Experiences'
 import { categories, languages, recommendedFor } from './api/filters'
 
 
-export default function ExperiencesPage({ excludeId = null, limit = null, initialRecommended = "" }) {
+export default function ExperiencesPage({ initialRecommended = "" }) {
+
+  const pageTitle = "EXPERIENCES"
+  const pageText = "Discover hands-on rural experiences designed to connect you with local traditions, nature, and people. From outdoor adventures to cultural workshops and farm activities, every experience is carefully selected to be authentic, sustainable, and meaningful. By booking an experience, you are not only creating memories, but also directly supporting small rural communities and local hosts."
 
   const [experiences, setExperiences] = useState([])
   const [filteredExperiencies, setFilteredExperiences] = useState([])
@@ -21,16 +24,8 @@ export default function ExperiencesPage({ excludeId = null, limit = null, initia
   const { id } = router.query
 
   useEffect(() => {
-    let data = getExperiences()
-
-    if (excludeId) {
-      data = data.filter(exp.id !== Number(excludeId))
-    }
-    if (limit) {
-      data = data.slice(0, limit)
-    }
-    setExperiences(data)
-  }, [excludeId, limit])
+    setExperiences(getExperiences())
+  }, [])
 
 
   useEffect(() => {
@@ -65,9 +60,10 @@ export default function ExperiencesPage({ excludeId = null, limit = null, initia
       <div className={styles.hero} >
         <img className={styles.heroimg} src="/assets/Hero/HeroExperiences.jpg" alt="HeroImagen" />
         <div className={styles.heroText}>
-          <h2 className={styles.heroTitle}>EXPERIENCES</h2>
+          <h2 className={styles.heroTitle}>{pageTitle}</h2>
         </div>
       </div>
+      <h3 className={styles.pageText}>{pageText}</h3>
       <div className={styles.filtersSection}>
         <div className={styles.search}>
           <input

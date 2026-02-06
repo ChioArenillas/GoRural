@@ -22,9 +22,10 @@ export default function Detail() {
 
 
   return (
-    <div>
-      <div>
+    <div className={styles.fullDetails}>
         <img className={styles.experienceImage} src={experience.img} alt={experience.title} />
+        <div className={styles.bookingBtnWrapper}>
+          <button className={styles.bookingBtn}>Book Now for {experience.price} {experience.currency}</button>
       </div>
       <div className={styles.component}>
         <div className={styles.details}>
@@ -84,11 +85,11 @@ export default function Detail() {
               <div>
                 <h1 className={styles.subtitle}>Pictures:</h1>
                 <div className={styles.scroll}>
-                <div className={styles.picturesList}>
-                  {experience.pictures.map((src, index) => (
-                    <img key={index} src={src} className={styles.pictures} />
-                  ))}
-                </div>
+                  <div className={styles.picturesList}>
+                    {experience.pictures.map((src, index) => (
+                      <img key={index} src={src} className={styles.pictures} />
+                    ))}
+                  </div>
                 </div>
               </div>
             )}

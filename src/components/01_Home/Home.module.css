@@ -1,0 +1,102 @@
+@import "../../styles/vars.css";
+@import "../../styles/globals.css";
+@import "../03_Experiences/Experiences.module.css";
+
+.preTitle{
+  margin: -10px 10px;
+  margin-bottom: -30px;
+  display: flex;
+  text-align: center;
+}
+.title {
+  padding: 30px 0 10 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.text{
+  margin: 0 10%;
+  display: flex;
+  text-align: center;
+  color: var(--color-text-dark);
+  font-weight: 100;
+  font-size: var(--font-size-text);
+}
+
+.btnSection {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.smallBtn {
+  background-color: var(--color-dark);
+
+}
+
+.backgroundSection {
+  background-color: var(--color-primary);
+}
+.picturesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 150px;
+  gap: 16px;
+  padding: 40px;
+}
+
+.pictureItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.pictureItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pictureItem:nth-child(1) {
+  grid-column: 1 / span 2; /* Ocupa 2 columnas */
+  grid-row: 1 / span 1;    /* Ocupa 2 filas */
+}
+
+.pictureItem:nth-child(2) {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.pictureItem:nth-child(3) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.pictureItem:nth-child(4) {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.pictureItem:nth-child(5) {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+
+
+
+.reviewSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+}
+
+@media (max-width: 600px) {
+.picturesGrid {
+  grid-template-rows: 120px 80px;
+  gap: 8px;
+  padding: 20px;
+}
+}

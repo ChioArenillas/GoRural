@@ -1,0 +1,159 @@
+@import "../../styles/vars.css";
+@import "../../styles/globals.css";
+@import "../02_Hero/Hero.module.css";
+
+.fullDetails {
+  position: relative;
+}
+
+.experienceImage {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bookingBtnWrapper {
+  background-color: var(--color-btn-text);
+  padding-bottom: 10px;
+  position: sticky;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bookingBtn {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  background: var(--color-dark);
+  color: var(--color-btn-text);
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: var(--color-dark);
+  text-decoration: none;
+  transition: transform 200ms ease-in-out;
+}
+
+.title {
+  color: var(--color-text-dark);
+  letter-spacing: 1px;
+}
+
+.filtersSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 30px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  max-width: 500px;
+}
+
+.search input {
+  width: 90%;
+  padding: 10px 10px 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filterItem {
+  position: relative;
+}
+
+.filterItem select {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.clearBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-text-dark);
+}
+
+.clearBtn:hover {
+  color: var(--color-card-bg);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviewSection {
+  display: flex;
+  gap: 15px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;
+  height: auto;
+  min-height: fit-content;
+  gap: 10px;
+
+}
+
+.reviewCardTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.reviewComment {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.picturesList {
+  display: flex;
+  gap: 15px;
+}
+
+.pictures {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .reviewCard {
+    width: 150px;
+  }
+
+  .pictures {
+    width: 150px;
+    height: 100px;
+  }
+}

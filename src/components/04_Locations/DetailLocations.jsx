@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import styles from "../Experiences/Experiences.module.css";
+import styles from "../03_Experiences/Experiences.module.css";
 import { getExperiencesByLocation, getLocationsById } from '@/pages/api/userFecht';
 import Link from 'next/link';
 

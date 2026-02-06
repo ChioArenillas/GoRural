@@ -1,8 +1,8 @@
 import React from 'react'
-import DetailLocations from '@/components/Locations/DetailLocations'
+import DetailLocations from '@/components/04_Locations/DetailLocations'
 import { locations } from './api/dbLocations'
 import { useRouter } from 'next/router'
-import styles from "@/components/Locations/Locations.module.css"
+import styles from "@/components/04_Locations/Locations.module.css"
 
 export default function DetailLocationsPage() {
 
