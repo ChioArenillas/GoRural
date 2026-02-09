@@ -9,7 +9,7 @@ export default function Myapp({ Component, pageProps }) {
 
   const router= useRouter()
 
-  const hideNavbarRoutes = ["/BookingPage"]
+  const hideNavbarRoutes = ["/BookingPage", "/PersonalDataPage"]
   const hideNavbar = hideNavbarRoutes.includes(router.pathname)
 
   return (

@@ -10,10 +10,18 @@
     color: none;
 }
 
-
 .title{
     color: var(--color-text-dark);
     align-content: center;
+    font-size: var(--font-size-text);
+    background-color: var(--color-primary);
+    padding: 5px;
+}
+.subtitle{
+    font-size: var(--font-size-text);
+    font-weight: 100;
+}
+.description{
     font-size: var(--font-size-text);
 }
 
@@ -24,6 +32,7 @@
 }
 .selector{
     display: flex;
+    align-items: center;
 }
 .selectorBtn{
     margin: 16px;
@@ -37,4 +46,24 @@
 }
 .selectorBtn:hover{
     background-color: rgb(206, 206, 206);
+}
+.bookingBtn{
+    display: block;
+    margin:  20px auto;
+}
+.details{
+  background-color: var(--color-bg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.detailsTop{
+    display: flex;
+    gap: 20px;
+}
+.detailsBottom{
+    background-color: var(--color-primary);
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
 }

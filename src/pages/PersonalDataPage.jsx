@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from "@/components/08_Booking/Booking.module.css"
-import Booking from '@/components/08_Booking/Booking'
+import PersonalData from '@/components/08_Booking/PersonalData'
 import { useRouter } from 'next/router'
 import { getExperiencesById } from './api/userFecht'
 
-export default function BookingPage() {
+export default function PersonalDataPage() {
 
   const router = useRouter()
-  const { id } = router.query
+  const { id, adults, children, donation, totalPrice } = router.query
 
   if (!router.isReady) {
     return <p>Loading...</p>
@@ -33,9 +33,13 @@ export default function BookingPage() {
         </div>
       </div>
       <div className={styles.component}>
-      <h2 className={styles.description}>{experience.description}</h2>
       <div >
-        <Booking />
+        < PersonalData 
+        adults={Number(adults)}
+        children={Number(children)}
+        donation={Number(donation)}
+        totalPrice={Number(totalPrice)}
+        />
       </div>
       </div>
     </div>  )
