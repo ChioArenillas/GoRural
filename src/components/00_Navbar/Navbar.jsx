@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbarBg}>
     <div className={styles.navbar}>
-      <a className={styles.title} href="/HomePage">GoRural
+      <a className={styles.navbarTitle} href="/HomePage">GoRural
       </a>
       <div className={styles.menu}>
         <img className={styles.menuBtn} 

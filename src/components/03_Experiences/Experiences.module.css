@@ -12,29 +12,6 @@
   object-fit: cover;
 }
 
-.bookingBtnWrapper {
-  background-color: var(--color-btn-text);
-  padding-bottom: 10px;
-  position: sticky;
-  top: 70px;
-  display: flex;
-  justify-content: center;
-  z-index: 10;
-}
-
-.bookingBtn {
-  margin-top: 10px;
-  padding: 8px;
-  font-size: var(--font-size-text);
-  font-weight: bold;
-  background: var(--color-dark);
-  color: var(--color-btn-text);
-  border-radius: 8px;
-  cursor: pointer;
-  border-color: var(--color-dark);
-  text-decoration: none;
-  transition: transform 200ms ease-in-out;
-}
 
 .title {
   color: var(--color-text-dark);

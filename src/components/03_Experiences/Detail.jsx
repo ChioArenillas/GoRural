@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { getExperiencesById, getOtherExperiences } from "@/pages/api/userFecht"
 import React from 'react'
 import Experiences from "./Experiences"
+import Link from "next/link"
 
 export default function Detail() {
 
@@ -25,7 +26,14 @@ export default function Detail() {
     <div className={styles.fullDetails}>
         <img className={styles.experienceImage} src={experience.img} alt={experience.title} />
         <div className={styles.bookingBtnWrapper}>
+            <Link href={{
+              pathname: 'BookingPage',
+              query: {
+                id: experience.id
+              }
+            }}>
           <button className={styles.bookingBtn}>Book Now for {experience.price} {experience.currency}</button>
+          </Link>
       </div>
       <div className={styles.component}>
         <div className={styles.details}>

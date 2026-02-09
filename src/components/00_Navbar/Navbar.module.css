@@ -22,14 +22,14 @@
     margin: 0 10%;
 }
 
-.title {
+.navbarTitle {
     font-size: var(--font-size-title);
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text-light);
 }
 
-.title:hover {
+.navbarTitle:hover {
     color: var(--color-text-dark);
 }
 

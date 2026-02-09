@@ -1,0 +1,40 @@
+@import "../../styles/vars.css";
+@import "../../styles/globals.css";
+@import "../02_Hero/Hero.module.css";
+@import "../00_Navbar/Navbar.module.css";
+
+.navbarTitle{
+    color: var(--color-text-light);
+}
+.navbarTitle:hover {
+    color: none;
+}
+
+
+.title{
+    color: var(--color-text-dark);
+    align-content: center;
+    font-size: var(--font-size-text);
+}
+
+.selectorSection{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.selector{
+    display: flex;
+}
+.selectorBtn{
+    margin: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.selectorBtn:hover{
+    background-color: rgb(206, 206, 206);
+}
