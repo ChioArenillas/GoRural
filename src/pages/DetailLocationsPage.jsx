@@ -15,7 +15,7 @@ export default function DetailLocationsPage() {
     <div>
       <div className={styles.hero}>
         <img
-          src={location.image}
+          src={location.img}
           alt={location.name}
           className={styles.heroimg}
         />
