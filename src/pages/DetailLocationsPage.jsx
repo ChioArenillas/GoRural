@@ -10,11 +10,10 @@ export default function DetailLocationsPage() {
   const router = useRouter()
   const { id } = router.query
 
-  const location = locations.find(loc => loc.id === id)
-
   if(!router.isReady) {
     return <p>Loading...</p>
   }
+    const location = locations.find(loc => loc.id === id)
 
   if (!location) {
     return <p>Location not found</p>
