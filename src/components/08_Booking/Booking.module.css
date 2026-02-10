@@ -27,6 +27,7 @@
 
 .selectorSection{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
@@ -67,3 +68,10 @@
     padding: 5px 10px;
     font-weight: bold;
 }
+
+ @media (max-width: 600px) {
+    .selectorSection{
+    gap: 10px;
+    }
+}
+ 
