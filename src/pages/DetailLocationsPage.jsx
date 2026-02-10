@@ -3,6 +3,7 @@ import DetailLocations from '@/components/04_Locations/DetailLocations'
 import { locations } from './api/dbLocations'
 import { useRouter } from 'next/router'
 import styles from "@/components/04_Locations/Locations.module.css"
+import { getLocationsById } from './api/userFecht'
 
 export default function DetailLocationsPage() {
 
@@ -10,6 +11,14 @@ export default function DetailLocationsPage() {
   const { id } = router.query
 
   const location = locations.find(loc => loc.id === id)
+
+  if(!router.isReady) {
+    return <p>Loading...</p>
+  }
+
+  if (!location) {
+    return <p>Location not found</p>
+  }
 
   return (
     <div>
