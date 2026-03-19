@@ -6,6 +6,11 @@ GoRural is a web application focused on promoting rural areas by allowing users 
 
 The project aims to provide a clean and interactive user experience while practicing modern frontend development techniques.
 
+
+## 🚀 Live Demo
+
+https://go-rural.vercel.app/
+
 ## 🚀 Technologies
 
 * React
@@ -35,10 +40,6 @@ cd GoRural
 npm install
 npm run dev
 ```
-
-## 📸 Demo
-
-https://go-rural.vercel.app/
 
 ## 📌 Project Status
 
