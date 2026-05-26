@@ -1,55 +1,69 @@
 @import "../03_Experiences/Experiences.module.css";
 @import "../../styles/globals.css";
 
-.preTitle{
+.preTitle {
   margin: -10px 10px;
   margin-bottom: -30px;
   display: flex;
   text-align: center;
 }
+
 .title {
-  padding: 30px 0 10 0;
+  padding: 40px 0 20px 0;
   display: flex;
   justify-content: center;
   text-align: center;
+  font-weight: 700;
 }
-.text{
+
+.text {
   margin: 0 10%;
   display: flex;
   text-align: center;
   color: var(--color-text-dark);
-  font-weight: 100;
+  font-weight: 300;
   font-size: var(--font-size-text);
+  line-height: 1.8;
 }
 
 .btnSection {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
 
 .smallBtn {
   background-color: var(--color-dark);
-
 }
 
 .backgroundSection {
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  padding: 60px 0;
 }
+
 .picturesGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 150px;
-  gap: 16px;
-  padding: 40px;
+  grid-template-rows: 280px 180px;
+  gap: 20px;
+  padding: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .pictureItem {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   width: 100%;
   height: 100%;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.pictureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
 }
 
 .pictureItem img {
@@ -57,10 +71,16 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform var(--transition-slow);
 }
+
+.pictureItem:hover img {
+  transform: scale(1.1);
+}
+
 .pictureItem:nth-child(1) {
-  grid-column: 1 / span 2; /* Ocupa 2 columnas */
-  grid-row: 1 / span 1;    /* Ocupa 2 filas */
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
 }
 
 .pictureItem:nth-child(2) {
@@ -83,19 +103,22 @@
   grid-row: 2 / span 1;
 }
 
-
-
 .reviewSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
+  margin: 50px;
+  gap: 30px;
 }
 
 @media (max-width: 600px) {
-.picturesGrid {
-  grid-template-rows: 120px 80px;
-  gap: 8px;
-  padding: 20px;
-}
+  .picturesGrid {
+    grid-template-rows: 150px 100px;
+    gap: 12px;
+    padding: 25px;
+  }
+
+  .text {
+    margin: 0 5%;
+  }
 }

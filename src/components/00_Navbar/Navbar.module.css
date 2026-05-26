@@ -2,12 +2,13 @@
 @import "../../styles/vars.css";
 
 .navbarBg {
-    background: linear-gradient(135deg, var(--color-dark) 0%, #3d6b45 100%);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-dark) 100%);
+    box-shadow: var(--shadow-lg);
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar {
@@ -16,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 15px 50px;
+    padding: 18px 50px;
     z-index: 2;
     margin: 0 5%;
     max-width: 1400px;
@@ -26,24 +27,28 @@
 
 .navbarTitle {
     font-size: calc(var(--font-size-title) * 1.3);
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     color: var(--color-text-light);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-base);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-text-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .navbarTitle:hover {
-    color: var(--color-primary);
     transform: scale(1.05);
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .menuBtn {
     display: none;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-base);
 }
 
 .menuBtn:hover {
@@ -59,7 +64,7 @@
 .menuItems {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 40px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -72,7 +77,8 @@
     font-size: var(--font-size-text);
     position: relative;
     padding: 8px 0;
-    transition: all 0.3s ease;
+    transition: all var(--transition-base);
+    opacity: 0.9;
 }
 
 .menuItems a::after {
@@ -82,12 +88,14 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    transition: width var(--transition-base);
+    border-radius: var(--radius-full);
 }
 
 .menuItems a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-light);
+    opacity: 1;
 }
 
 .menuItems a:hover::after {
@@ -98,7 +106,7 @@
     .navbar {
         flex-direction: row;
         align-items: center;
-        padding: 12px 20px;
+        padding: 15px 20px;
     }
 
     .navbarTitle {
@@ -120,18 +128,19 @@
 
     .menuItems {
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 5%;
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, var(--color-dark) 0%, #3d6b45 100%);
-        padding: 25px 30px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-        min-width: 200px;
+        gap: 20px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-dark) 100%);
+        padding: 30px 40px;
+        box-shadow: var(--shadow-2xl);
+        min-width: 220px;
         animation: slideDown 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     @keyframes slideDown {
@@ -147,7 +156,7 @@
 
     .menuItems a {
         font-size: var(--font-size-small-text);
-        padding: 10px 0;
+        padding: 12px 0;
         width: 100%;
         text-align: center;
     }

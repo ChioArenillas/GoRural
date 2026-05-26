@@ -1,18 +1,48 @@
-:root{
-    /* colors */
-    --color-text-dark:#4B5563;
-    --color-text-light: #ffff;
-    --color-primary: #80B287;
-    --color-secondary: #917E3B;
-    --color-dark: #4d7f54; 
-    --color-bg: #ffff;
-    --color-card-bg:#565454dc;
-    --color-btn-text:#ffff;
+:root {
+    --color-text-dark: #2D3748;
+    --color-text-muted: #718096;
+    --color-text-light: #FFFFFF;
+    --color-primary: #41835cb5;
+    --color-primary-dark: #2F855A;
+    --color-primary-light: #d0d4d2;
+    --color-secondary: #D69E2E;
+    --color-secondary-dark: #B7791F;
+    --color-accent: #EBF8FF;
+    --color-dark: #276749;
+    --color-darker: #1A4731;
+    --color-bg: #FFFFFF;
+    --color-bg-alt: #F7FAFC;
+    --color-bg-gradient-start: #F0FFF4;
+    --color-bg-gradient-end: #E6FFFA;
+    --color-card-bg: #FFFFFF;
+    --color-btn-text: #FFFFFF;
+    --color-border: #E2E8F0;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-shadow-hover: rgba(0, 0, 0, 0.2);
+
+    /* shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+    /* border radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
 
     /* font-size */
-    --font-size-title: 26px;
-    --font-size-text: 20px;
-    --font-size-small-title: 20px;
-    --font-size-small-text: 14px;
+    --font-size-title: 32px;
+    --font-size-text: 18px;
+    --font-size-small-title: 24px;
+    --font-size-small-text: 15px;
+    --font-size-hero: 48px;
 }
-
