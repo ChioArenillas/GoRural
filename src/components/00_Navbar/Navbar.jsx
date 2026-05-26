@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
 
-//CAMBIAR LOS LINKS DE LAS PÁGINAS
 export default function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
