@@ -1,28 +1,108 @@
 @import "../../styles/globals.css";
 
-.cardList{
-  background-color: var(--color-bg);
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
 }
+
 .card {
-  width: 150px;
-  height: 230px;
+  width: 280px;
+  height: 380px;
   padding: 0;
   position: relative;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
 }
 
-.cardImage{
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.cardImage {
   height: 100%;
   width: 100%;
   margin: 0;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardDetails {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cardDetails::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  z-index: 1;
 }
 
 .smallBtn {
-    background-color: var(--color-dark);
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  color: var(--color-text-light);
+  border: none;
+  padding: 12px 24px;
+  font-size: var(--font-size-small-text);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--radius-full);
+  margin: 16px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
 }
-.smallBtn:hover{
-    transform: none;
+
+.smallBtn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-dark));
+}
+
+@media (max-width: 830px) {
+  .card {
+    width: 220px;
+    height: 320px;
+  }
+
+  .smallBtn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardList {
+    gap: 16px;
+    padding: 30px 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 260px;
+    height: 340px;
+  }
+
+  .smallBtn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }

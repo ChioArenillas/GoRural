@@ -13,11 +13,11 @@ export default function Faqs() {
     }, [])
 
   return (
-    <div className={styles.component}>
+    <div className={styles.faqsContainer}>
         {faqs.map((faq, index) => (
-            <div key={index}>
-                <h2>{faq.question}</h2>
-                <p>{faq.answer}</p>
+            <div key={index} className={styles.faqItem}>
+                <h2 className={styles.faqQuestion}>{faq.question}</h2>
+                <p className={styles.faqAnswer}>{faq.answer}</p>
             </div>
         ))}
     </div>

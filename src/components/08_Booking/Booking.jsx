@@ -63,7 +63,7 @@ export default function Booking() {
 
 
     return (
-        <div className={styles.component}>
+        <div className={styles.bookingContainer}>
             <h1 className={styles.title}>Select number of people:</h1>
             <div className={styles.selectorSection}>
                 <div className={styles.selector}>
