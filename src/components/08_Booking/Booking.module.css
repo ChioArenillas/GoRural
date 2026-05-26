@@ -1,7 +1,6 @@
-@import "../../styles/vars.css";
-@import "../../styles/globals.css";
 @import "../02_Hero/Hero.module.css";
 @import "../00_Navbar/Navbar.module.css";
+@import "../../styles/globals.css";
 
 .navbarTitle{
     color: var(--color-text-light);

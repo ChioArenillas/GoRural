@@ -1,6 +1,5 @@
-@import "../../styles/vars.css";
-@import "../../styles/globals.css";
 @import "../03_Experiences/Experiences.module.css";
+@import "../../styles/globals.css";
 
 .preTitle{
   margin: -10px 10px;
