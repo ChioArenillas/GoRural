@@ -3,7 +3,7 @@
     --color-text-muted: #718096;
     --color-text-light: #FFFFFF;
     --color-primary: #5e6d65b5;
-    --color-primary-dark: #537b67;
+    --color-primary-dark: #2F855A;
     --color-primary-light: #d0d4d2;
     --color-secondary: #D69E2E;
     --color-secondary-dark: #B7791F;
@@ -12,8 +12,8 @@
     --color-darker: #1A4731;
     --color-bg: #FFFFFF;
     --color-bg-alt: #F7FAFC;
-    --color-bg-gradient-start: #F0FFF4;
-    --color-bg-gradient-end: #E6FFFA;
+    --color-bg-gradient-start: #dbe0dc;
+    --color-bg-gradient-end: #aeb2b1;
     --color-card-bg: #FFFFFF;
     --color-btn-text: #FFFFFF;
     --color-border: #E2E8F0;
