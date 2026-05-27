@@ -1,11 +1,29 @@
 @import "../03_Experiences/Experiences.module.css";
 @import "../../styles/globals.css";
 
+
 .preTitle {
-  margin: -10px 10px;
-  margin-bottom: -30px;
-  display: flex;
+  font-size: 42px;
+  color: var(--color-text-dark);
+  font-weight: 800;
+  line-height: 1.1;
   text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+  margin: 40px auto 0px auto;
+  max-width: 800px;
+}
+
+.preTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
 }
 
 .title {

@@ -13,9 +13,11 @@ export default function Layout({ children }) {
   return (
     <div className={styles.layout}>
       {!hideNavbar && <Navbar />}
+
       <main className={styles.main}>
         {children}
       </main>
+
       <Footer />
     </div>
   )
