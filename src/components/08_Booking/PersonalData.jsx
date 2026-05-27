@@ -52,25 +52,50 @@ export default function PersonalData({ adults, children, donation, totalPrice })
                 </div>
                 <p className={styles.detailsBottom}>Total Price: {totalPrice} {experience.currency}</p>
             </div>
-            <div>
+            <div className={styles.personalDataSection}>
                 <h1>Personal Data:</h1>
-                <div>
-                    <p>Name:</p>
-                    <input type="text" value={name} onChange={nameHandler} />
+                <div className={styles.formGrid}>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="name">Name:</label>
+                        <input
+                            id="name"
+                            type="text"
+                            value={name}
+                            onChange={nameHandler}
+                            placeholder="Enter your name"
+                        />
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="surname">Surname:</label>
+                        <input
+                            id="surname"
+                            type="text"
+                            value={surname}
+                            onChange={surnameHandler}
+                            placeholder="Enter your surname"
+                        />
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="phone">Phone:</label>
+                        <input
+                            id="phone"
+                            type="tel"
+                            value={phone}
+                            onChange={phoneHandler}
+                            placeholder="Enter your phone number"
+                        />
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="email">Email:</label>
+                        <input
+                            id="email"
+                            type="email"
+                            value={email}
+                            onChange={emailHandler}
+                            placeholder="Enter your email"
+                        />
+                    </div>
                 </div>
-                                <div>
-                    <p>Surname:</p>
-                    <input type="text" value={surname} onChange={surnameHandler} />
-                </div>
-                <div>
-                    <p>Phone:</p>
-                    <input type="number" value={phone} onChange={phoneHandler} />
-                </div>
-                <div>
-                    <p>Email:</p>
-                    <input type="email" value={email} onChange={emailHandler} />
-                </div>
-
             </div>
             <button className={styles.bookingBtn} onClick={handleBookNow}>Book now for {totalPrice} {experience.currency} </button>
         {success && (

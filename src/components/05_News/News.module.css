@@ -7,6 +7,14 @@
   gap: 24px;
   padding: 40px 20px;
 }
+.itemImage {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
 
 .card {
   width: 320px;
