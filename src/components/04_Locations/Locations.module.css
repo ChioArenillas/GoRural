@@ -6,7 +6,6 @@
   justify-content: center;
   gap: 24px;
   padding: 40px 20px;
-  background: linear-gradient(to bottom, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
 }
 
 .card {
@@ -35,7 +34,7 @@
 }
 
 .card:hover .cardImage {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .cardDetails {
@@ -49,14 +48,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
   z-index: 1;
 }
 
 .smallBtn {
   position: relative;
   z-index: 2;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  background: var(--color-darker);
   color: var(--color-text-light);
   border: none;
   padding: 12px 24px;

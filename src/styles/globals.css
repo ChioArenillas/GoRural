@@ -43,7 +43,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-secondary);
   border-radius: 2px;
 }
 
@@ -125,7 +125,7 @@ body {
   font-size: var(--font-size-title);
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-primary);
   padding: 10px 24px;
   border-radius: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -222,7 +222,7 @@ body {
 
 .cardList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 30px;
   padding: 40px 20px;
   width: 100%;
@@ -250,7 +250,7 @@ body {
   padding: 0;
   border-radius: 16px;
   width: 100%;
-  height: 380px;
+  height: 100%;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   position: relative;
@@ -296,7 +296,7 @@ body {
 .cardCategorie {
   width: fit-content;
   font-size: var(--font-size-small-text);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-secondary);
   padding: 6px 12px;
   border-radius: 20px;
   color: var(--color-text-light);
@@ -338,7 +338,7 @@ body {
 
 .cardPrice {
   margin: 0;
-  background: linear-gradient(135deg, var(--color-dark), #2a2a2a);
+  background: var(--color-dark);
   padding: 8px 16px;
   border-radius: 20px;
   color: var(--color-text-light);
@@ -430,7 +430,7 @@ body {
   padding: 16px 32px;
   font-size: var(--font-size-text);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-secondary);
   color: var(--color-btn-text);
   border-radius: 30px;
   cursor: pointer;
@@ -445,7 +445,7 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  background: var(--color-primary);
 }
 
 .smallBtn {
@@ -453,7 +453,7 @@ body {
   padding: 10px 20px;
   font-size: var(--font-size-text);
   font-weight: 600;
-  background: linear-gradient(135deg, var(--color-dark), #2a2a2a);
+  background: var(--color-dark);
   color: var(--color-btn-text);
   border-radius: 20px;
   cursor: pointer;
@@ -486,7 +486,7 @@ body {
   padding: 12px 28px;
   font-size: var(--font-size-text);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: var(--color-secondary);
   color: var(--color-btn-text);
   border-radius: 25px;
   cursor: pointer;

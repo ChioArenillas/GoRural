@@ -6,7 +6,6 @@
   justify-content: center;
   gap: 24px;
   padding: 40px 20px;
-  background: linear-gradient(to bottom, var(--color-bg-alt), #fff);
 }
 
 .card {
@@ -72,7 +71,7 @@
 }
 
 .smallBtn {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  background: var(--color-darker);
   color: var(--color-text-light);
   border: none;
   padding: 10px 20px;

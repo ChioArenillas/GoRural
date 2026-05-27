@@ -14,7 +14,6 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 60px 20px;
-  background: linear-gradient(to bottom, var(--color-bg-gradient-start), var(--color-bg-alt));
 }
 
 .title {
@@ -73,7 +72,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  background: var(--color-darker);
   color: var(--color-text-light);
   border: none;
   font-size: var(--font-size-title);
@@ -98,7 +97,7 @@
   padding: 16px 48px;
   font-size: var(--font-size-text);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  background: var(--color-darker);
   color: var(--color-text-light);
   border: none;
   border-radius: var(--radius-full);
@@ -130,7 +129,7 @@
 }
 
 .detailsBottom {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-darker));
+  background:var(--color-darker);
   display: inline-block;
   padding: 10px 20px;
   font-weight: 700;

@@ -34,7 +34,7 @@
     text-transform: uppercase;
     transition: all var(--transition-base);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-text-light) 100%);
+    background: var(--color-text-light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
