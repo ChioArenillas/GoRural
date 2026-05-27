@@ -8,7 +8,6 @@
   height: 300px;
   width: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
 
@@ -175,7 +174,9 @@
     max-width: 200px;
     height: 150px;
   }
-
+  .search{
+    width: 80%;
+  }
   .filters {
     gap: 12px;
   }
